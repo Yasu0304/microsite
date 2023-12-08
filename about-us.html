@@ -27,12 +27,6 @@
     />
     <meta property="og:image:type" content="image/jpg" />
     <meta property="og:type" content="website" />
-    <!-- <meta property="og:url" content="http://medalliance.com.tw/" />
-    <meta property="og:title" content="Medalliance - MedTech Services" />
-    <meta
-      property="og:description"
-      content="Transforming healthcare with telemedicine, mobile nursing, and hospital-at-home solutions. Partnering with Taiwan's finest medical device manufacturers for excellence in patient care."
-    /> -->
     <title>Medalliance - MedTech Services</title>
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
     <link
@@ -50,117 +44,67 @@
   </head>
 
   <body>
-    <!-- 手機版header↓ -->
-    <nav class="navbar sticky-top bg-body-tertiary shadow-sm d-md-none">
+    <!--1208 navbar↓ -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="./index.html">
           <img
             src="./images/medalliance.svg"
             alt="MedAlliance MedTech Services: Transforming healthcare with telemedicine, mobile nursing, and hospital-at-home solutions. Partnering with Taiwan's finest medical device manufacturers for excellence in patient care."
-            style="max-width: 80%"
           />
         </a>
         <button
-          class="navbar-toggler btn-sm"
+          class="navbar-toggler"
           type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-      </div>
-      <div
-        class="offcanvas offcanvas-end"
-        tabindex="-1"
-        id="offcanvasNavbar"
-        aria-labelledby="offcanvasNavbarLabel"
-      >
-        <div class="offcanvas-header">
-          <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5> -->
-          <button
-            type="button"
-            class="btn-close ms-auto"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 ps-4">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./index.html">
-                Home
-              </a>
+              <a class="nav-link " href="./index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link active"
-                href="./about-us.html"
-                style="text-indent: -12px"
+              <a class="nav-link " aria-current="page" href="#"
+                >Medical AI</a
               >
-                <i class="bi bi-caret-right-fill me-2"></i>
-                About
-              </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Telemedicine</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Medical Eqouipments</a>
-            </li>
-            <li class="nav-item">
+            <li class="nav-item dropdown">
               <a
-                href="mailto:support@medalliance.com.tw?subject=Mail from Medalliance Site"
-                class="nav-link"
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
-                Contact
+                Telemedicine
               </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Mobile Nursing</a></li>
+                <li><a class="dropdown-item" href="#">Hospital at Home</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Medical Eouipments</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./about-us.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <!-- 手機版header↑ -->
-    <!-- 桌機版header↓ -->
-    <div
-      class="container-fluid sticky-top bg-body-tertiary d-none d-md-block shadow-sm"
-    >
-      <div class="container-xxl px-md-0">
-        <header class="d-flex flex-wrap justify-content-center py-3">
-          <a
-            href="./index.html"
-            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
-          >
-            <img
-              src="./images/medalliance.svg"
-              alt="MedAlliance MedTech Services: Transforming healthcare with telemedicine, mobile nursing, and hospital-at-home solutions. Partnering with Taiwan's finest medical device manufacturers for excellence in patient care."
-            />
-          </a>
-          <ul class="nav nav-pills">
-            <li class="nav-item">
-              <a href="#" class="nav-link">Telemedicine</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Medical Eqouipments</a>
-            </li>
-            <li class="nav-item">
-              <a href="./about-us.html" class="nav-link active">About</a>
-            </li>
-            <li class="nav-item">
-              <a
-                href="mailto:support@medalliance.com.tw?subject=Mail from Medalliance Site"
-                class="nav-link"
-              >
-                Contact
-              </a>
-            </li>
-          </ul>
-        </header>
-      </div>
-    </div>
-    <!-- 桌機版header↑ -->
-    <div class="container-xxl px-0" style="margin-bottom: 60px">
+    <!--1208 navbar↑ -->
+    <div class="container-xxl px-0" style="margin-bottom: 72px">
       <img
         src="./images/about/hero-md-01.webp"
         alt=""

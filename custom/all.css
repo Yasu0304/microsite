@@ -40,19 +40,26 @@
 
 .nav-link {
   color: #595857;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 .nav-link:hover, .nav-link:focus {
   color: #FF8500;
 }
 
-.nav-pills {
-  --bs-nav-pills-border-radius: 999px;
+.nav-item .nav-link.active {
+  background-color: #FF8500;
+  border-radius: 999px;
+  color: #fff;
+  padding: 4px 16px;
+  font-weight: bold;
 }
 
-.nav-pills .nav-link.active {
+.dropdown-item:hover, .dropdown-item:focus {
   background-color: #FF8500;
-  padding: 4px 16px;
+  color: #fff;
+  fount-weight: bold;
 }
 
 .card-point {
