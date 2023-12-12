@@ -31,15 +31,27 @@
 .bg-body-tertiary
   background-color: #fff !important
 
-.nav-link
+.nav-link,.dropdown-toggle.nav-link
   color: $meda-bk-80
-.nav-link:hover, .nav-link:focus
+.nav-link:hover, .nav-link:focus,.dropdown-toggle.nav-link:hover,.dropdown-toggle.nav-link:focus
   color: $medasec
-.nav-pills
+.nav-pills,.nav-pills .dropdown-toggle
   --bs-nav-pills-border-radius: 999px
-.nav-pills .nav-link.active
+.nav-pills .nav-link.active,.nav-pills .nav-link.active.dropdown-toggle
   background-color: $medasec
-  padding: 4px 16px
+  color: #fff
+  font-weight: bold
+// .ani-icon .dropdown-item .bi
+//   margin-right: -1rem 
+//   color: transparent
+//   transition: 0.5s
+// .ani-icon .dropdown-item:hover .bi,.ani-icon .dropdown-item:focus .bi
+//   margin-right: 0
+//   color: $meda-bk-80
+.dropdown-menu .dropdown-item
+  color: $meda-bk-80
+
+  
 
 .card-point
   position: absolute

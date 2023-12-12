@@ -50,116 +50,161 @@
   </head>
 
   <body>
-    <!-- 手機版header↓ -->
-    <nav class="navbar sticky-top bg-body-tertiary shadow-sm d-md-none">
+    <!-- 1212 navbar↓ -->
+    <nav
+      class="navbar navbar-expand-lg fixed-top navbar-light shadow-sm"
+      style="background-color: #ffffff"
+    >
       <div class="container-fluid">
         <a class="navbar-brand" href="./index.html">
           <img
             src="./images/medalliance.svg"
             alt="MedAlliance MedTech Services: Transforming healthcare with telemedicine, mobile nursing, and hospital-at-home solutions. Partnering with Taiwan's finest medical device manufacturers for excellence in patient care."
-            style="max-width: 80%"
-          />
-        </a>
+        /></a>
         <button
-          class="navbar-toggler btn-sm"
+          class="navbar-toggler"
           type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-      </div>
-      <div
-        class="offcanvas offcanvas-end"
-        tabindex="-1"
-        id="offcanvasNavbar"
-        aria-labelledby="offcanvasNavbarLabel"
-      >
-        <div class="offcanvas-header">
-          <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5> -->
-          <button
-            type="button"
-            class="btn-close ms-auto"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 ps-4">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./index.html">
-                Home
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                href="./about-us.html"
-                style="text-indent: -12px"
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item nav-pills">
+              <a class="nav-link px-3" aria-current="page" href="./index.html"
+                >Home</a
               >
-                <i class="bi bi-caret-right-fill me-2"></i>
-                About
-              </a>
             </li>
             <!-- <li class="nav-item">
-              <a class="nav-link" href="#">Telemedicine</a>
+              <a class="nav-link" href="#">Medical AI</a>
             </li> -->
-            <li class="nav-item">
-              <a class="nav-link" href="./medical-equipments.html">Medical Equipments</a>
+            <!-- <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Telemedicine
+              </a>
+              <ul class="dropdown-menu p-2" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Mobile Nursing</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Hospital at Home</a></li>
+              </ul>
+            </li> -->
+            <li class="nav-item nav-pills dropdown" style="color: #595857">
+              <a
+                class="nav-link px-3 dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Medical Equipments
+              </a>
+              <ul
+                class="dropdown-menu p-2"
+                aria-labelledby="navbarDropdown"
+                style="color: #595857"
+              >
+                <li>
+                  <p class="dropdown-item fw-bold mb-0" style="color: #ff8500">
+                    Medical Devices And Equipments
+                  </p>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./medical-equipments.html#Imaging_Solutions"
+                    ><i class="bi bi-arrow-right-short"></i>Imaging Solutions</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./medical-equipments.html#Patient_Analytics_Solutions"
+                    ><i class="bi bi-arrow-right-short"></i>Patient Analytics
+                    Solutions</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <p class="dropdown-item fw-bold mb-0" style="color: #ff8500">
+                    Healthcare IT
+                  </p>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./medical-equipments.html#Mobile_Nursing_Station"
+                    ><i class="bi bi-arrow-right-short"></i>Mobile Nursing
+                    Station</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./medical-equipments.html#Base_Telescoping"
+                    ><i class="bi bi-arrow-right-short"></i>Base Telescoping</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <p class="dropdown-item fw-bold mb-0" style="color: #ff8500">
+                    Medical Supplies
+                  </p>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./medical-equipments.html#Masks"
+                    ><i class="bi bi-arrow-right-short"></i>Masks</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./medical-equipments.html#Gloves"
+                    ><i class="bi bi-arrow-right-short"></i>Gloves</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./medical-equipments.html#Alcohol_Prep_Pads"
+                    ><i class="bi bi-arrow-right-short"></i>Alcohol Prep Pads</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./medical-equipments.html#Personal_Protective_Equipment"
+                    ><i class="bi bi-arrow-right-short"></i>Personal Protective
+                    Equipment</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item nav-pills">
+              <a class="nav-link px-3 active" href="./about-us.html">About</a>
             </li>
             <li class="nav-item">
-              <a
-                href="mailto:support@medalliance.com.tw?subject=Mail from Medalliance Site"
-                class="nav-link"
-              >
-                Contact
-              </a>
+              <a class="nav-link px-3" href="#">Contact Us</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <!-- 手機版header↑ -->
-    <!-- 桌機版header↓ -->
-    <div
-      class="container-fluid sticky-top bg-body-tertiary d-none d-md-block shadow-sm"
-    >
-      <div class="container-xxl px-md-0">
-        <header class="d-flex flex-wrap justify-content-center py-3">
-          <a
-            href="./index.html"
-            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
-          >
-            <img
-              src="./images/medalliance.svg"
-              alt="MedAlliance MedTech Services: Transforming healthcare with telemedicine, mobile nursing, and hospital-at-home solutions. Partnering with Taiwan's finest medical device manufacturers for excellence in patient care."
-            />
-          </a>
-          <ul class="nav nav-pills">
-            <!-- <li class="nav-item">
-              <a href="#" class="nav-link">Telemedicine</a>
-            </li> -->
-            <li class="nav-item">
-              <a href="./medical-equipments.html" class="nav-link">Medical Equipments</a>
-            </li>
-            <li class="nav-item">
-              <a href="./about-us.html" class="nav-link active">About</a>
-            </li>
-            <li class="nav-item">
-              <a
-                href="mailto:support@medalliance.com.tw?subject=Mail from Medalliance Site"
-                class="nav-link"
-              >
-                Contact
-              </a>
-            </li>
-          </ul>
-        </header>
-      </div>
-    </div>
-    <!-- 桌機版header↑ -->
+    <!-- 1212 navbar↑ -->
     <div class="container-xxl px-0" style="margin-bottom: 60px">
       <img
         src="./images/about/hero-md-01.webp"
@@ -200,18 +245,17 @@
     </div>
     <div class="container-xxl" style="max-width: 1200px; margin-bottom: 60px">
       <div class="row">
-        <div class="col-6 col-sm-3 d-flex flex-column align-items-center ">
+        <div class="col-6 col-sm-3 d-flex flex-column align-items-center">
           <img
             src="./images/about/Brain CT AI Analytic.webp"
             alt=""
             class="img-thumbnail border-0 mb-2"
           />
           <p
-              class="px-4 py-1 text-center text-white fw-bold"
-              style="background-color: #7a9ccc; border-radius: 999px"
-            >
-              Brain CT AI Analytic
-            
+            class="px-4 py-1 text-center text-white fw-bold"
+            style="background-color: #7a9ccc; border-radius: 999px"
+          >
+            Brain CT AI Analytic
           </p>
         </div>
         <div class="col-6 col-sm-3 d-flex flex-column align-items-center">
@@ -221,11 +265,10 @@
             class="img-thumbnail border-0 mb-2"
           />
           <p
-              class="px-4 py-1 text-center text-white fw-bold"
-              style="background-color: #b1d24c; border-radius: 999px"
-            >
-              Handheld Ultrasound
-            
+            class="px-4 py-1 text-center text-white fw-bold"
+            style="background-color: #b1d24c; border-radius: 999px"
+          >
+            Handheld Ultrasound
           </p>
         </div>
         <div class="col-6 col-sm-3 d-flex flex-column align-items-center">
