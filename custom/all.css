@@ -1,3 +1,31 @@
+.p-color-bk80, .h-color-bk80 {
+  color: #595857;
+}
+
+.h-color-pri {
+  color: #294076;
+}
+
+.btn-primary, .btn-primary:hover {
+  background-color: #294076;
+}
+
+.btn-secondary, .btn-secondary:hover {
+  background-color: #FF8500;
+  border-color: #FF8500;
+}
+
+.btn-outline-primary {
+  color: #294076;
+  border-color: rgba(115, 128, 158, 0.4823529412);
+}
+
+.btn-outline-primary:hover {
+  background-color: #FF8500;
+  border-color: #FF8500;
+  color: #fff;
+}
+
 .text-medapri {
   color: #294076;
 }
@@ -157,6 +185,20 @@
      object-fit: cover;
 }
 
-.wrap {
-  min-height: 100%;
+.textIndent {
+  text-indent: -1rem;
+}
+
+.textIndent .bi {
+  text-indent: 0rem;
+}
+
+.hrStyle-common {
+  border: 0;
+  height: 1px;
+  background: #ffffff;
+  background-image: linear-gradient(to right, #ffffff #ffffff, #ffffff);
+  margin-bottom: 12px;
+  width: 70%;
+  margin: 0 auto;
 }/*# sourceMappingURL=all.css.map */

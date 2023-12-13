@@ -1,5 +1,23 @@
 @import 'base'
+@import 'components'
 
+.p-color-bk80, .h-color-bk80
+  color: $meda-bk-80
+.h-color-pri
+  color: $medapri
+
+.btn-primary,.btn-primary:hover
+  background-color: $medapri
+.btn-secondary,.btn-secondary:hover
+  background-color: $medasec
+  border-color: $medasec
+.btn-outline-primary
+  color: $medapri
+  border-color: $medapriOutlinebtn
+.btn-outline-primary:hover
+  background-color: $medasec
+  border-color: $medasec
+  color: #fff
 .text-medapri
   color: $medapri
 
@@ -124,5 +142,13 @@
       height: 100%
       object-fit: cover
 
-.wrap
-  min-height: 100%
+.textIndent
+  text-indent: -1rem
+.textIndent .bi
+  text-indent: 0rem
+
+.hrStyle-common
+  @include hrStyle-common
+  margin-bottom: 12px
+  width: 70%
+  margin: 0 auto
