@@ -34,86 +34,65 @@
 
   <body>
     <!-- 1212 navbar↓ -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light shadow-sm" style="background-color: #ffffff">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html"> <img src="./images/medalliance.svg" alt="MedAlliance MedTech Services: Transforming healthcare with telemedicine, mobile nursing, and hospital-at-home solutions. Partnering with Taiwan's finest medical device manufacturers for excellence in patient care." /></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item nav-pills">
-              <a class="nav-link px-3" aria-current="page" href="./index.html">Home</a>
-            </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="#">Medical AI</a>
-            </li> -->
-            <!-- <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Telemedicine
-              </a>
-              <ul class="dropdown-menu p-2" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Mobile Nursing</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Hospital at Home</a></li>
-              </ul>
-            </li> -->
-            <li class="nav-item nav-pills dropdown" style="color: #595857">
-              <a class="nav-link px-3 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Medical Equipments </a>
-              <ul class="dropdown-menu p-2" aria-labelledby="navbarDropdown" style="color: #595857">
-                <li>
-                  <p class="dropdown-item fw-bold mb-0" style="color: #ff8500">Medical Devices And Equipments</p>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./medical-equipments.html#Imaging_Solutions"><i class="bi bi-arrow-right-short"></i>Imaging Solutions</a>
-                </li>
+    <nav id="navbarEquipments" class="navbar navbar-expand-lg bg-body-tertiary position-sticky top-0 px-3 shadow-sm" style="background-color: #fff;z-index: 1">
+      <a class="navbar-brand" href="./index.html"> <img src="./images/medalliance.svg" alt="MedAlliance MedTech Services: Transforming healthcare with telemedicine, mobile nursing, and hospital-at-home solutions. Partnering with Taiwan's finest medical device manufacturers for excellence in patient care." /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-                <li>
-                  <a class="dropdown-item" href="./medical-equipments.html#Patient_Analytics_Solutions"><i class="bi bi-arrow-right-short"></i>Patient Analytics Solutions</a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <p class="dropdown-item fw-bold mb-0" style="color: #ff8500">Healthcare IT</p>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./medical-equipments.html#Mobile_Nursing_Station"><i class="bi bi-arrow-right-short"></i>Mobile Nursing Station</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./medical-equipments.html#Base_Telescoping"><i class="bi bi-arrow-right-short"></i>Base Telescoping</a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <p class="dropdown-item fw-bold mb-0" style="color: #ff8500">Medical Supplies</p>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./medical-equipments.html#Masks"><i class="bi bi-arrow-right-short"></i>Masks</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./medical-equipments.html#Gloves"><i class="bi bi-arrow-right-short"></i>Gloves</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./medical-equipments.html#Alcohol_Prep_Pads"><i class="bi bi-arrow-right-short"></i>Alcohol Prep Pads</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./medical-equipments.html#Personal_Protective_Equipment"><i class="bi bi-arrow-right-short"></i>Personal Protective Equipment</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item nav-pills">
-              <a class="nav-link px-3 active" href="./about-us.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link px-3" href="mailto:support@medalliance.com.tw">Contact Us</a>
-            </li>
-          </ul>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item nav-pills">
+            <a class="nav-link px-3" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item nav-pills dropdown" style="color: #595857">
+            <a class="nav-link px-3  dropdown-toggle" href="./medical-equipments.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Medical Equipments </a>
+            <ul class="dropdown-menu p-2" aria-labelledby="navbarDropdown" style="color: #595857;">
+              <li>
+                <p class="dropdown-item fw-bold mb-0" style="color: #ff8500">Medical Devices And Equipments</p>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./medical-equipments.html#Imaging_Solutions"><i class="bi bi-arrow-right-short"></i>Imaging Solutions</a>
+              </li>
+
+              <li>
+                <a class="dropdown-item" href="./medical-equipments.html#Patient_Analytics_Solutions"><i class="bi bi-arrow-right-short"></i>Patient Analytics Solutions</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <p class="dropdown-item fw-bold mb-0" style="color: #ff8500">Healthcare IT</p>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./medical-equipments.html#Mobile_Nursing_Station"><i class="bi bi-arrow-right-short"></i>Mobile Nursing Station</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./medical-equipments.html#Base_Telescoping"><i class="bi bi-arrow-right-short"></i>Base Telescoping</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item fw-bold" style="color: #ff8500" href="#">Medical Supplies</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./medical-equipments.html#Masks"><i class="bi bi-arrow-right-short"></i>Masks</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./medical-equipments.html#Gloves"><i class="bi bi-arrow-right-short"></i>Gloves</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./medical-equipments.html#Alcohol_Prep_Pads"><i class="bi bi-arrow-right-short"></i>Alcohol Prep Pads</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./medical-equipments.html#Personal_Protective_Equipment"><i class="bi bi-arrow-right-short"></i>Personal Protective Equipment</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item nav-pills">
+            <a class="nav-link px-3 active" href="./about-us.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="mailto:support@medalliance.com.tw">Contact Us</a>
+          </li>
+        </ul>
       </div>
     </nav>
     <!-- 1212 navbar↑ -->
