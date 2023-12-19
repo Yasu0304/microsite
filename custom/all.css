@@ -1,3 +1,7 @@
+html {
+  scroll-padding-top: 66px;
+}
+
 .p-color-bk80, .h-color-bk80, .text-color_bk80 {
   color: #595857;
 }
