@@ -1,5 +1,13 @@
 html {
-  scroll-padding-top: 66px;
+  scroll-padding-top: 70px;
+}
+
+p {
+  color: #595857;
+}
+
+.p-color-40 {
+  color: #9F9E9F;
 }
 
 .p-color-bk80, .h-color-bk80, .text-color_bk80 {
