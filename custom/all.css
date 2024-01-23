@@ -6,6 +6,10 @@ p {
   color: #595857;
 }
 
+.p-color-bk0 {
+  color: #fff;
+}
+
 .p-color-40 {
   color: #9F9E9F;
 }
@@ -72,10 +76,6 @@ p {
 .offcanvas .navbar-nav .nav-link.active {
   color: #FF8500;
   font-weight: bold;
-}
-
-.bg-body-tertiary {
-  background-color: #fff !important;
 }
 
 .dropdown-item:active, .dropdown-item.active {
