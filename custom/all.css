@@ -34,10 +34,6 @@
   font-weight: bold;
 }
 
-.bg-body-tertiary {
-  background-color: #fff !important;
-}
-
 .dropdown-item:active, .dropdown-item.active {
   background-color: #fff;
 }
