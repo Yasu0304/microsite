@@ -1,10 +1,6 @@
-@mixin bg-center-cover
+@mixin bg-center($size)
     background-position: center center
-    background-size: cover
-    @content
-@mixin bg-center-contain
-    background-position: center center
-    background-size: contain
+    background-size: $size
     background-repeat: no-repeat
     overflow: hidden
     @content

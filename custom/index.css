@@ -1,0 +1,12 @@
+.heroHeight {
+  padding-top: 37.5%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.heroCover {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}/*# sourceMappingURL=index.css.map */
