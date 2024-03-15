@@ -4,6 +4,12 @@
   width: 100%;
 }
 
+.heroSmHeight {
+  padding-top: 66.5%;
+  overflow: hidden;
+  width: 100%;
+}
+
 .heroCover {
   background-position: center center;
   background-size: cover;
