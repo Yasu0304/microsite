@@ -36,4 +36,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
+}
+
+.hoverStyle {
+  transform: scale(0.9);
+  transition: 0.7s;
+}
+.hoverStyle:hover {
+  transform: scale(1);
 }/*# sourceMappingURL=index.css.map */
