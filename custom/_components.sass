@@ -4,6 +4,12 @@
     background-repeat: no-repeat
     overflow: hidden
     @content
+@mixin bg-right($size)
+    background-position: right top
+    background-size: $size
+    background-repeat: no-repeat
+    overflow: hidden
+    @content
 
 @mixin card($size)
     padding-top: $size
@@ -34,4 +40,3 @@
     background-color: $color1
     color: $color2
     @content
-    

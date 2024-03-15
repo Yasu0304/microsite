@@ -5,3 +5,21 @@
     @include card(37.5%)
 .heroCover
     @include bg-center(cover)
+
+.sectionContent
+    @include card(80%)
+    @include bg-right(cover)
+.sectionCard
+    position: relative
+    border-radius: 12px
+    // overflow: hidden
+    @include card(70%)
+    @include bg-center(cover)
+    .sectionCardContent
+        position: absolut
+        z-index:1
+        right: 0
+        left: 0
+        bottom: 0
+        background-color: #FFF
+        padding: 1rem

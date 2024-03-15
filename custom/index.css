@@ -9,4 +9,35 @@
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
+}
+
+.sectionContent {
+  padding-top: 80%;
+  overflow: hidden;
+  width: 100%;
+  background-position: right top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.sectionCard {
+  position: relative;
+  border-radius: 12px;
+  padding-top: 70%;
+  overflow: hidden;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.sectionCard .sectionCardContent {
+  position: absolut;
+  z-index: 1;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #FFF;
+  padding: 1rem;
 }/*# sourceMappingURL=index.css.map */
