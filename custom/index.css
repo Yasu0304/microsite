@@ -43,5 +43,6 @@
   transition: 0.7s;
 }
 .hoverStyle:hover {
+  cursor: pointer;
   transform: scale(1);
 }/*# sourceMappingURL=index.css.map */
