@@ -86,16 +86,17 @@ let medObj = [
     }
 
 ]
-let cardGroup = document.querySelector(".row.row-cols-1.row-cols-md-3.g-4.cardGroup")
-function init() {
 
+let cardGroup = document.querySelector(".row.row-cols-1.row-cols-md-3.g-4");
+let filter = document.querySelector(".filter");
+function init() {
     let str = "";
     medObj.forEach((item, index) => {
-        let content = `<div class="col cardContent">
+        let content = `<div class="col">
                 <div class="card h-100">
                     <img src="${item.aiImage}" class="card-img-top" alt="${item.aiImageAlt}">
                     <div class="card-body">
-                        <h5 class="card-title">${item.aiItem}</h5>
+                        <h5 class="card-title" data-name=${item.aiItem}>${item.aiItem}</h5>
                         <h6 class="card-subtitle">${item.aiName}</h6>
                         <p class="card-text">${item.aiText}</p>
                     </div>
@@ -107,29 +108,57 @@ function init() {
 }
 init();
 
-let filter = document.querySelector(".filter");
+//第一層filter
 filter.addEventListener("click", e => {
     // console.log(e.target.value);
     if (e.target.value == undefined) {
-        alert(`請點擊分類按鈕`);
         return;
     }
     let str = "";
     medObj.forEach((item, index) => {
         if (e.target.value == item.aiItem) {
-            let content = `<div class="col cardContent">
+            let content = `<div class="col">
                 <div class="card h-100">
                     <img src="${item.aiImage}" class="card-img-top" alt="${item.aiImageAlt}">
                     <div class="card-body">
-                        <h5 class="card-title">${item.aiItem}</h5>
-                        <h6 class="card-subtitle">${item.aiName}</h6>
+                        <h5 class="card-title">${item.aiName}</h5>
+                        <p class="card-text">${item.aiText}</p>
+                    </div>
+                </div>
+            </div>`
+            str += content;
+        } else if (e.target.value == `全部`) {
+            let content = `<div class="col">
+                <div class="card h-100">
+                    <img src="${item.aiImage}" class="card-img-top" alt="${item.aiImageAlt}">
+                    <div class="card-body">
+                        <h5 class="card-title" data-name=${item.aiItem}>${item.aiName}</h5>
                         <p class="card-text">${item.aiText}</p>
                     </div>
                 </div>
             </div>`
             str += content;
         }
-        cardGroup.innerHTML = str;
     });
     cardGroup.innerHTML = str;
+})
+
+// 第二層filter
+let cardItem = document.querySelector(".card.h-100");
+cardItem.classList.add("show")
+
+cardItem.addEventListener("click", e => {
+    console.log(cardItem)
+    let displayContent = document.querySelector(".displayContent");
+    displayContent.innerHtml = `<div class="card mb-3">
+                <img src="https://images.unsplash.com/photo-1614183653441-b8cd6d7c516d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+            </div>`
+
 })
