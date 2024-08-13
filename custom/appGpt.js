@@ -87,12 +87,15 @@ let medObj = [
 
 ]
 
+console.log(medObj[0]);
+
 let cardGroup = document.querySelector(".cardGroup");
 let filter = document.querySelector(".filter");
+let displayContent = document.querySelector('.displayContent');
 
 function init() {
     let str = "";
-    medObj.forEach((item, index) => {
+    medObj.forEach((item) => {
         let content = `<div class="col">
                 <div class="card h-100 border-0 itemCard">
                     <img src="${item.aiImage}" class="card-img-top" alt="${item.aiImageAlt}">
@@ -102,51 +105,69 @@ function init() {
                         <p class="card-text">${item.aiText}</p>
                     </div>
                 </div>
-            </div>`
+            </div>`;
         str += content;
     });
     cardGroup.innerHTML = str;
 }
-init();
 
-//第一層filter
+// 過濾按鈕點擊事件監聽
 filter.addEventListener("click", e => {
-    // console.log(e.target.value);
-    if (e.target.value == undefined) {
+    if (e.target.value === undefined) {
         return;
     }
+
     let str = "";
     medObj.forEach((item, index) => {
-        if (e.target.value == item.aiItem) {
-            let content = `<div class="col">
-                <div class="card border-0 h-100">
-                    <img src="${item.aiImage}" class="card-img-top" alt="${item.aiImageAlt}">
-                    <div class="card-body">
-                        <h5 class="card-title">${item.aiName}</h5>
-                        <p class="card-text mb-auto">${item.aiText}</p>
-                    </div>
-                    <button class="btn btn-outline-secondary btnMore" type="button">read more</button>
-                </div>
-            </div>`
-            str += content;
-        } else if (e.target.value == `全部`) {
+        if (e.target.value === item.aiItem) {
             let content = `<div class="col">
                 <div class="card border-0 h-100 itemCard">
                     <img src="${item.aiImage}" class="card-img-top" alt="${item.aiImageAlt}">
                     <div class="card-body">
-                        <h5 class="card-title" data-name=${item.aiItem}>${item.aiName}</h5>
+                        <h5 class="card-title">${item.aiName}</h5>
                         <p class="card-text mb-auto">${item.aiText}</p>
+                        <button class="btn btn-outline-secondary btnMore" type="button" data-index="${index}">read more</button>
                     </div>
                 </div>
-            </div>`
+            </div>`;
+            str += content;
+        } else if (e.target.value === "全部") {
+            let content = `<div class="col">
+            <div class="card border-0 h-100 itemCard">
+                <img src="${item.aiImage}" class="card-img-top" alt="${item.aiImageAlt}">
+                <div class="card-body">
+                    <h5 class="card-title">${item.aiName}</h5>
+                    <p class="card-text mb-auto">${item.aiText}</p>
+                </div>
+            </div>
+        </div>`;
             str += content;
         }
     });
     cardGroup.innerHTML = str;
-})
 
-// 第二層filter
-let btnMore = document.querySelector(".btnMore");
-btnMore.addEventListener("click",e =>{
-    console.log(btnMore)
-})
+    // 添加事件監聽器給每個 "read more" 按鈕
+    const btnMoreList = document.querySelectorAll('.btnMore');
+    btnMoreList.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const index = e.target.getAttribute('data-index');
+            displayMoreContent(index);
+        });
+    });
+});
+
+// 顯示詳細內容的函數
+function displayMoreContent(index) {
+    const item = medObj[index];
+    let content = `<div class="card h-100">
+                    <img src="${item.aiImage}" class="card-img-top" alt="${item.aiImageAlt}">
+                    <div class="card-body">
+                        <h5 class="card-title">${item.aiName}</h5>
+                        <p class="card-text">${item.aiText}</p>
+                    </div>
+                </div>`;
+    displayContent.innerHTML = content;
+}
+
+// 執行初始化
+init();

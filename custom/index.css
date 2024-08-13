@@ -1,48 +1,19 @@
-.heroHeight {
-  padding-top: 37.5%;
-  overflow: hidden;
-  width: 100%;
+.displayContent {
+  display: none;
 }
 
-.heroSmHeight {
-  padding-top: 66.5%;
-  overflow: hidden;
-  width: 100%;
+.displayContent.active {
+  display: block;
+  animation: show 0.5s ease-in-out;
 }
 
-.heroCover {
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow: hidden;
-}
-
-.sectionContent {
-  padding-top: 80%;
-  overflow: hidden;
-  width: 100%;
-  background-position: right top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow: hidden;
-}
-
-.sectionCard {
-  border-radius: 12px;
-  padding-top: 75%;
-  overflow: hidden;
-  width: 100%;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow: hidden;
-}
-
-.hoverStyle {
-  transform: scale(0.9);
-  transition: 0.7s;
-}
-.hoverStyle:hover {
-  cursor: pointer;
-  transform: scale(1);
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }/*# sourceMappingURL=index.css.map */
