@@ -2,13 +2,40 @@
 @import "components";
 @import "media";
 
-.indexBgSm {
-  background-image: url(../images/index/bn-sm.webp);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: contain;
+// .indexBgSm {
+//   background-image: url(../images/index/bn-sm.webp);
+//   background-repeat: no-repeat;
+//   background-position: top center;
+//   background-size: contain;
 
-  @include sm {
-    background-image: none;
+//   @include sm {
+//     background-image: none;
+//   }
+// }
+
+.aiItem_col {
+  width: 50%;
+
+  .aiItem {
+    @include card(100%);
+    background-color: $aiSec;
+
+    .aiItem_content {
+      padding: 1rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+
+      .aiItem_img {
+        width: 56%;
+        height: 56%;
+        margin-bottom: 8px;
+        border-radius: 999px;
+        background-color: $ai-bk-00;
+        @include bg-setting(center, center, 80%);
+      }
+    }
   }
 }

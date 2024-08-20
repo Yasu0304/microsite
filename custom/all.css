@@ -60,10 +60,6 @@
     transform: scale(1);
   }
 }
-html {
-  scroll-padding-top: 66px;
-}
-
 body .bebas-neue-regular {
   font-family: "Bebas Neue", sans-serif;
   font-style: normal;

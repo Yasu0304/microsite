@@ -59,14 +59,32 @@
     transform: scale(1);
   }
 }
-.indexBgSm {
-  background-image: url(../images/index/bn-sm.webp);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: contain;
+.aiItem_col {
+  width: 50%;
 }
-@media (min-width: 576px) {
-  .indexBgSm {
-    background-image: none;
-  }
+.aiItem_col .aiItem {
+  padding-top: 100%;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  background-color: #00B0C1;
+}
+.aiItem_col .aiItem .aiItem_content {
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.aiItem_col .aiItem .aiItem_content .aiItem_img {
+  width: 56%;
+  height: 56%;
+  margin-bottom: 8px;
+  border-radius: 999px;
+  background-color: #fff;
+  background-position: center center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }/*# sourceMappingURL=index.css.map */
