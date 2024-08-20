@@ -62,6 +62,11 @@
 .aiItem_col {
   width: 50%;
 }
+@media (min-width: 576px) {
+  .aiItem_col {
+    width: 33.333%;
+  }
+}
 .aiItem_col .aiItem {
   padding-top: 100%;
   overflow: hidden;
