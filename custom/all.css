@@ -67,31 +67,4 @@ html {
 body .bebas-neue-regular {
   font-family: "Bebas Neue", sans-serif;
   font-style: normal;
-}
-
-.navbar-brand img {
-  width: 110px;
-  height: auto;
-}
-@media (min-width: 576px) {
-  .navbar-brand img {
-    width: 150px;
-    height: auto;
-  }
-}
-
-.navbar-toggler {
-  font-size: 16px;
-  padding: 8px;
-  border: 0;
-}
-
-.nav-link.active,
-.nav-link.active.dropdown-toggle {
-  font-weight: bold;
-}
-
-.dropdown-menu .dropdown-item {
-  color: var(--bs-gray-600);
-  background-color: var(--bs-white);
 }/*# sourceMappingURL=all.css.map */

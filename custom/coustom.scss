@@ -4,9 +4,11 @@
 
 // 2. Include any default variable overrides here
 $font-family-sans-serif: Jost;
-$primary: #0f5385;
-$success: #3493c3;
-$info: #c2dfed;
+$primary: #0077AC;
+$secondary: #00B0C1;
+$success: #4F52EF;
+$warning: #ED6762;
+$info: #5080B5;
 // 3. Required
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/variables-dark";
