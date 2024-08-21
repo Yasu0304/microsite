@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost:ital,wght@0,100..900;1,100..900&@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -67,7 +67,7 @@
   --bs-dark-border-subtle: #adb5bd;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
-  --bs-font-sans-serif: Jost;
+  --bs-font-sans-serif: "Jost", sans-serif;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -584,43 +584,6 @@ progress {
 
 [hidden] {
   display: none !important;
-}
-
-.fade {
-  transition: opacity 0.15s linear;
-}
-@media (prefers-reduced-motion: reduce) {
-  .fade {
-    transition: none;
-  }
-}
-.fade:not(.show) {
-  opacity: 0;
-}
-
-.collapse:not(.show) {
-  display: none;
-}
-
-.collapsing {
-  height: 0;
-  overflow: hidden;
-  transition: height 0.35s ease;
-}
-@media (prefers-reduced-motion: reduce) {
-  .collapsing {
-    transition: none;
-  }
-}
-.collapsing.collapse-horizontal {
-  width: 0;
-  height: auto;
-  transition: width 0.35s ease;
-}
-@media (prefers-reduced-motion: reduce) {
-  .collapsing.collapse-horizontal {
-    transition: none;
-  }
 }
 
 .lead {
@@ -2370,43 +2333,6 @@ progress {
 .btn-group-vertical > .btn-group:not(:first-child) > .btn {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-}
-
-.fade {
-  transition: opacity 0.15s linear;
-}
-@media (prefers-reduced-motion: reduce) {
-  .fade {
-    transition: none;
-  }
-}
-.fade:not(.show) {
-  opacity: 0;
-}
-
-.collapse:not(.show) {
-  display: none;
-}
-
-.collapsing {
-  height: 0;
-  overflow: hidden;
-  transition: height 0.35s ease;
-}
-@media (prefers-reduced-motion: reduce) {
-  .collapsing {
-    transition: none;
-  }
-}
-.collapsing.collapse-horizontal {
-  width: 0;
-  height: auto;
-  transition: width 0.35s ease;
-}
-@media (prefers-reduced-motion: reduce) {
-  .collapsing.collapse-horizontal {
-    transition: none;
-  }
 }
 
 .nav {
