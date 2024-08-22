@@ -15,6 +15,7 @@
 
 .aiItem_col {
   width: 50%;
+  cursor: pointer;
 
   @include sm {
     width: 33.333%;
@@ -75,6 +76,69 @@
       .aiItem_content {
         .aiItem_img {
           background-image: url(../images/indexImg/btnIcon/Personalized_Medicine.svg);
+        }
+      }
+    }
+  }
+
+  &:hover,
+  &:active {
+    &:nth-child(1) {
+      .aiItem {
+        .aiItem_content {
+          .aiItem_img {
+            background-image: url(../images/indexImg/btnIcon/Medical_Images_Analysis_active.svg);
+          }
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      .aiItem {
+        .aiItem_content {
+          .aiItem_img {
+            background-image: url(../images/indexImg/btnIcon/Clinical_Decision_Support_active.svg);
+          }
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      .aiItem {
+        .aiItem_content {
+          .aiItem_img {
+            background-image: url(../images/indexImg/btnIcon/Disease_Diagnosis_active.svg);
+          }
+        }
+      }
+    }
+
+    &:nth-child(4) {
+      .aiItem {
+        .aiItem_content {
+          .aiItem_img {
+            background-image: url(../images/indexImg/btnIcon/Surgical_Assistance_active.svg);
+          }
+        }
+      }
+    }
+
+    &:nth-child(5) {
+      .aiItem {
+        .aiItem_content {
+          .aiItem_img {
+            background-image: url(../images/indexImg/btnIcon/Health_Management_active.svg);
+          }
+        }
+      }
+    }
+
+    &:nth-child(6) {
+      .aiItem {
+        .aiItem_content {
+          .aiItem_img {
+            background-image: url(../images/indexImg/btnIcon/Personalized_Medicine_active.svg);
+          }
         }
       }
     }
