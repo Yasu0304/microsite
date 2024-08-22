@@ -20,9 +20,74 @@
     width: 33.333%;
   }
 
+  &:nth-child(1) {
+    .aiItem {
+      .aiItem_content {
+        .aiItem_img {
+          background-image: url(../images/indexImg/btnIcon/Medical_Images_Analysis.svg);
+        }
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    .aiItem {
+      .aiItem_content {
+        .aiItem_img {
+          background-image: url(../images/indexImg/btnIcon/Clinical_Decision_Support.svg);
+        }
+      }
+    }
+  }
+
+  &:nth-child(3) {
+    .aiItem {
+      .aiItem_content {
+        .aiItem_img {
+          background-image: url(../images/indexImg/btnIcon/Disease_Diagnosis.svg);
+        }
+      }
+    }
+  }
+
+  &:nth-child(4) {
+    .aiItem {
+      .aiItem_content {
+        .aiItem_img {
+          background-image: url(../images/indexImg/btnIcon/Surgical_Assistance.svg);
+        }
+      }
+    }
+  }
+
+  &:nth-child(5) {
+    .aiItem {
+      .aiItem_content {
+        .aiItem_img {
+          background-image: url(../images/indexImg/btnIcon/Health_Management.svg);
+        }
+      }
+    }
+  }
+
+  &:nth-child(6) {
+    .aiItem {
+      .aiItem_content {
+        .aiItem_img {
+          background-image: url(../images/indexImg/btnIcon/Personalized_Medicine.svg);
+        }
+      }
+    }
+  }
+
   .aiItem {
     @include card(100%);
     background-color: $aiSec;
+    transition: .7s;
+
+    &:hover {
+      background-color: $aiPri;
+    }
 
     .aiItem_content {
       padding: 1rem;
