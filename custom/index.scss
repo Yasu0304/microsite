@@ -172,3 +172,42 @@
     }
   }
 }
+
+.cardItemCol {
+  position: relative;
+
+  .cardItemCol_badges {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+    @include sm {
+      top: 1rem;
+      right: -1rem;
+    }
+
+    small {
+      background-color: $aiSuc;
+      border-radius: 999px;
+    }
+  }
+}
+
+.cardItemRow {
+  .cardItemRow_img {
+    margin-left: 0;
+    max-width: 100%;
+
+    @include sm {
+      margin-left: -110px;
+    }
+  }
+
+  .cardItemRow_body {
+    margin-left: 0;
+
+    @include sm {
+      margin-left: -64px;
+    }
+  }
+}

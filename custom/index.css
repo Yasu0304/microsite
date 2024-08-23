@@ -133,4 +133,41 @@
   background-size: 80%;
   background-repeat: no-repeat;
   overflow: hidden;
+}
+
+.cardItemCol {
+  position: relative;
+}
+.cardItemCol .cardItemCol_badges {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+@media (min-width: 576px) {
+  .cardItemCol .cardItemCol_badges {
+    top: 1rem;
+    right: -1rem;
+  }
+}
+.cardItemCol .cardItemCol_badges small {
+  background-color: #4F52EF;
+  border-radius: 999px;
+}
+
+.cardItemRow .cardItemRow_img {
+  margin-left: 0;
+  max-width: 100%;
+}
+@media (min-width: 576px) {
+  .cardItemRow .cardItemRow_img {
+    margin-left: -110px;
+  }
+}
+.cardItemRow .cardItemRow_body {
+  margin-left: 0;
+}
+@media (min-width: 576px) {
+  .cardItemRow .cardItemRow_body {
+    margin-left: -64px;
+  }
 }/*# sourceMappingURL=index.css.map */
