@@ -170,4 +170,13 @@
   .cardItemRow .cardItemRow_body {
     margin-left: -64px;
   }
+}
+
+.cardDetail {
+  display: none;
+}
+
+.cardDetail.open {
+  display: flex;
+  transition: 0.7s;
 }/*# sourceMappingURL=index.css.map */

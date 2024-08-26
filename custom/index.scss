@@ -211,3 +211,12 @@
     }
   }
 }
+
+.cardDetail {
+  display: none;
+}
+
+.cardDetail.open {
+  display: flex;
+  transition: .7s;
+}
