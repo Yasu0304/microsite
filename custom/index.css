@@ -154,24 +154,6 @@
   border-radius: 999px;
 }
 
-.cardItemRow .cardItemRow_img {
-  margin-left: 0;
-  max-width: 100%;
-}
-@media (min-width: 576px) {
-  .cardItemRow .cardItemRow_img {
-    margin-left: -110px;
-  }
-}
-.cardItemRow .cardItemRow_body {
-  margin-left: 0;
-}
-@media (min-width: 576px) {
-  .cardItemRow .cardItemRow_body {
-    margin-left: -64px;
-  }
-}
-
 .cardDetail {
   display: none;
 }
