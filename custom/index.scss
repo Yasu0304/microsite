@@ -192,31 +192,3 @@
     }
   }
 }
-
-// .cardItemRow {
-//   .cardItemRow_img {
-//     margin-left: 0;
-//     max-width: 100%;
-
-//     @include sm {
-//       margin-left: -110px;
-//     }
-//   }
-
-//   .cardItemRow_body {
-//     margin-left: 0;
-
-//     @include sm {
-//       margin-left: -64px;
-//     }
-//   }
-// }
-
-.cardDetail {
-  display: none;
-}
-
-.cardDetail.open {
-  display: flex;
-  transition: .7s;
-}

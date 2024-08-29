@@ -152,13 +152,4 @@
 .cardItemCol .cardItemCol_badges small {
   background-color: #4F52EF;
   border-radius: 999px;
-}
-
-.cardDetail {
-  display: none;
-}
-
-.cardDetail.open {
-  display: flex;
-  transition: 0.7s;
 }/*# sourceMappingURL=index.css.map */
