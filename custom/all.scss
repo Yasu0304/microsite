@@ -22,10 +22,16 @@ body {
   margin-bottom: 0;
   line-height: 1;
   font-weight: 700;
-  color: var(--bs-primary);
+  color: $aiPri;
 
   @include sm {
     font-size: 4.5rem;
     line-height: 1.2;
+  }
+}
+
+.btnLink-hover {
+  &:hover {
+    color: $ai-bk-00;
   }
 }

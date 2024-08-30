@@ -73,11 +73,15 @@ body .bebas-neue-regular {
   margin-bottom: 0;
   line-height: 1;
   font-weight: 700;
-  color: var(--bs-primary);
+  color: #0077AC;
 }
 @media (min-width: 576px) {
   .h1Title {
     font-size: 4.5rem;
     line-height: 1.2;
   }
+}
+
+.btnLink-hover:hover {
+  color: #fff;
 }/*# sourceMappingURL=all.css.map */
