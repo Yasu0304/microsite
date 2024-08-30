@@ -82,6 +82,13 @@ body .bebas-neue-regular {
   }
 }
 
+.btnLink-hover {
+  color: #fff;
+}
+.btnLink-hover:active {
+  color: #fff;
+}
 .btnLink-hover:hover {
   color: #fff;
+  background-color: #0077AC;
 }/*# sourceMappingURL=all.css.map */

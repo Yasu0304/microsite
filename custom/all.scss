@@ -31,7 +31,12 @@ body {
 }
 
 .btnLink-hover {
+  color: $ai-bk-00;
+  &:active {
+    color: $ai-bk-00;
+  }
   &:hover {
     color: $ai-bk-00;
+    background-color: $aiPri;
   }
 }

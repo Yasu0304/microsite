@@ -147,7 +147,7 @@
   .aiItem {
     @include card(100%);
     background-color: $aiSec;
-    transition: .7s;
+    transition: 0.7s;
 
     &:hover {
       background-color: $aiPri;
@@ -190,45 +190,5 @@
       background-color: $aiSuc;
       border-radius: 999px;
     }
-  }
-}
-
-.swiperTest1 {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  height: 300px;
-
-  & img {
-    display: block;
-    width: 100%;
-  }
-}
-
-.swiperTest2 {
-  width: 70%;
-  height: 50%;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40%;
-
-  & img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
   }
 }
