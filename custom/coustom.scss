@@ -4,12 +4,12 @@
 @import "../node_modules/bootstrap/scss/functions";
 
 // 2. Include any default variable overrides here
-$font-family-sans-serif: 'Jost', sans-serif;
-$primary: #0077AC;
-$secondary: #00B0C1;
-$success: #4F52EF;
-$warning: #ED6762;
-$info: #5080B5;
+$font-family-sans-serif: "Jost", sans-serif;
+$primary: #0077ac;
+$secondary: #00b0c1;
+$success: #4f52ef;
+$warning: #ed6762;
+$info: #5080b5;
 
 // 3. Required
 @import "../node_modules/bootstrap/scss/variables";
@@ -35,8 +35,8 @@ $info: #5080B5;
 // @import "../node_modules/bootstrap/scss/modal";
 // @import "../node_modules/bootstrap/scss/popover";
 // @import "../node_modules/bootstrap/scss/offcanvas";
+@import "../node_modules/bootstrap/scss/transitions";
 @import "../node_modules/bootstrap/scss/helpers";
 @import "../node_modules/bootstrap/scss/utilities/api";
-
 
 // 5. Add additional custom code here
