@@ -59,17 +59,9 @@
     transform: scale(1);
   }
 }
-p {
-  font-size: 20px;
-}
-
 body .bebas-neue-regular {
   font-family: "Bebas Neue", sans-serif;
   font-style: normal;
-}
-
-#aiNav {
-  transition: 0.8s;
 }
 
 .h1Title {
