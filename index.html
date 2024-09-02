@@ -23,82 +23,109 @@
 
 <body style="display: flex;flex-direction: column">
   <div class="d-flex flex-column flex-grow-1">
-    <nav id="aiNav" class="navbar navbar-expand-lg px-3 fixed-top top-0 shadow-sm"
-      style="background-color: #ffffffa5;z-index: 3;margin-bottom: 2.5rem;backdrop-filter: blur(8px);">
-      <!-- <a class="navbar-brand" href="./index.html"> <img src="./images/HMSNav.svg"
-          alt="HMS - Path to Hospital Intelligence" /></a> -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse m-n3" id="navbarSupportedContent">
-        <ul class="navbar-nav nav-underline ms-auto mb-2 mb-lg-0">
-          <li class="nav-item dropdown">
-            <a class="nav-link fw-bold text-primary px-3  dropdown-toggle" href="#" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false"> Medical Images Analysis </a>
-            <ul class="dropdown-menu p-2" aria-labelledby="navbarDropdown">
-              <li>
-                <a class="dropdown-item fw-bold mb-0 text-primary" href="#scrollspyHeading1">AI Endoscopy</a>
+    <nav class="navbar bg-body-tertiary fixed-top">
+      <div class="container-xxl">
+        <a class="navbar-brand" href="#">Offcanvas navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-primary" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Medical Images Analysis
+                </a>
+                <ul class="dropdown-menu border-0">
+                  <li><a class="dropdown-item" href="#scrollspyHeading1">AI Endoscopy</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
               </li>
-              <hr class="my-1">
-              <li>
-                <a class="dropdown-item fw-bold mb-0 text-primary" href="#">Personal Protective
-                  Equipment</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-primary" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Clinical Decision Support
+                </a>
+                <ul class="dropdown-menu border-0">
+                  <li><a class="dropdown-item border-0" href="#">Action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-primary" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Disease Diagnosis
+                </a>
+                <ul class="dropdown-menu border-0">
+                  <li><a class="dropdown-item" href="#scrollspyHeading1">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-primary" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Surgical Assistance
+                </a>
+                <ul class="dropdown-menu border-0">
+                  <li><a class="dropdown-item" href="#scrollspyHeading1">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-primary" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Health Management
+                </a>
+                <ul class="dropdown-menu border-0">
+                  <li><a class="dropdown-item" href="#scrollspyHeading1">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-primary" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Personalized Medicine
+                </a>
+                <ul class="dropdown-menu border-0">
+                  <li><a class="dropdown-item" href="#scrollspyHeading1">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
               </li>
             </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link fw-bold text-primary px-3  dropdown-toggle" href="#" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false"> Clinical Decision Support </a>
-            <ul class="dropdown-menu p-2" aria-labelledby="navbarDropdown">
-              <li>
-                <a class="dropdown-item fw-bold mb-0 text-primary"
-                  href="https://healthcarearmor.com/?product_cat=medical-supplies">Personal Protective Equipment</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link fw-bold text-primary px-3  dropdown-toggle" href="#" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false"> Disease Diagnosis </a>
-            <ul class="dropdown-menu p-2" aria-labelledby="navbarDropdown">
-              <li>
-                <a class="dropdown-item fw-bold mb-0 text-primary"
-                  href="https://healthcarearmor.com/?product_cat=medical-supplies">Personal Protective Equipment</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link fw-bold text-primary px-3  dropdown-toggle" href="#" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false"> Surgical Assistance </a>
-            <ul class="dropdown-menu p-2" aria-labelledby="navbarDropdown">
-              <li>
-                <a class="dropdown-item fw-bold mb-0 text-primary"
-                  href="https://healthcarearmor.com/?product_cat=medical-supplies">Personal Protective Equipment</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link fw-bold text-primary px-3  dropdown-toggle" href="#" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false"> Health Management </a>
-            <ul class="dropdown-menu p-2" aria-labelledby="navbarDropdown">
-              <li>
-                <a class="dropdown-item fw-bold mb-0 text-primary"
-                  href="https://healthcarearmor.com/?product_cat=medical-supplies">Personal Protective Equipment</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link fw-bold text-primary px-3  dropdown-toggle" href="#" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false"> Personalized Medicine </a>
-            <ul class="dropdown-menu p-2" aria-labelledby="navbarDropdown">
-              <li>
-                <a class="dropdown-item fw-bold mb-0 text-primary"
-                  href="https://healthcarearmor.com/?product_cat=medical-supplies">Personal Protective Equipment</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
+            <!-- <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+          </div>
+        </div>
       </div>
     </nav>
     <div class="container-fluid flex-grow-1 px-0">
@@ -106,7 +133,7 @@
 
       <!-- hero↑ -->
       <section>
-        <div class="container-xxl px-0 mb-5">
+        <div class="container-xxl px-0 mb-5" style="padding-top: 56px;">
           <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center">
             <div class="col-12 col-sm-5 py-4">
               <div>
@@ -189,7 +216,8 @@
           </div>
         </div>
         <div class="container-xxl" data-bs-spy="scroll">
-          <div class="card mb-3 mx-auto border-0 cardItemRow" id="scrollspyHeading1" style="overflow: hidden">
+          <div class="card mb-3 mx-auto border-0 cardItemRow" id="scrollspyHeading1"
+            style="overflow: hidden;margin-top: 56px;">
             <div class="row g-0">
               <div class="col-12 col-sm-5">
                 <img src="./images/indexImg/cardImg/rowImg.jpeg" alt="" />
