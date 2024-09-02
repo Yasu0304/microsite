@@ -78,6 +78,16 @@ body .bebas-neue-regular {
   }
 }
 
+.nav-link.active,
+.nav-link.active.dropdown-toggle {
+  font-weight: bold;
+}
+
+.dropdown-menu .dropdown-item {
+  color: var(--bs-gray-600);
+  background-color: var(--bs-white);
+}
+
 .btnLink-hover {
   color: #fff;
 }

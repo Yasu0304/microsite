@@ -35,6 +35,17 @@ body {
   }
 }
 
+.nav-link.active,
+.nav-link.active.dropdown-toggle {
+  // background-color: var(--bs-white);
+  font-weight: bold;
+}
+
+.dropdown-menu .dropdown-item {
+  color: var(--bs-gray-600);
+  background-color: var(--bs-white);
+}
+
 .btnLink-hover {
   color: $ai-bk-00;
   &:active {
